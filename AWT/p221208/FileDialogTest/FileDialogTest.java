@@ -11,7 +11,7 @@ public class FileDialogTest {
 		FileDialog fileOpen = new FileDialog(f, "File Open", FileDialog.LOAD);
 
 		f.setVisible(true);
-		fileOpen.setDirectory("C:\\Widows");
+		fileOpen.setDirectory("C:\\Windows");
 		fileOpen.setVisible(true);
 
 		System.out.println(fileOpen.getDirectory() + fileOpen.getFile());
