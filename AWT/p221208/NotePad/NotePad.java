@@ -6,8 +6,10 @@ import java.awt.Frame;
 import java.awt.Menu;
 import java.awt.MenuBar;
 import java.awt.MenuItem;
+import java.awt.MenuShortcut;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
@@ -22,6 +24,8 @@ public class NotePad extends WindowAdapter implements ActionListener {
 		MenuBar mb = new MenuBar();
 		Menu mFile = new Menu("파일(F)");
 		MenuItem miNew = new MenuItem("새로 만들기(N)");
+		MenuShortcut ms = new MenuShortcut(KeyEvent.VK_N);
+		miNew.setShortcut(ms);
 		MenuItem miNewPage = new MenuItem("새 창(W)");
 		MenuItem miOpen = new MenuItem("열기(O)...");
 		MenuItem miSave = new MenuItem("저장(S)");
